@@ -1,9 +1,142 @@
-*{
+/*RESET*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
+}
+
+/*STILE*/
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sx {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+.mr {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.sx .logo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #dbdbdb;
+}
+
+article {
+    height: 100%;
+    width: 70%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: flex-start;
+    height: 20%;
+    width: 100%;
+    border-bottom: 3px solid beige;
+}
+
+header .logo {
+    display: none;
+}
+
+section {
+    height: 80%;
+}
+
+.dx {
+    width: 20%;
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.dx div {
+    width: 60%;
+    height: 2.5rem;
+    background-color: antiquewhite;
+    align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sx {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .sx .logo {
+        display: none;
+    }
+
+    section {
+        display: none;
+    }
+
+    article {
+        height: 90%;
+        width: 100%;
+    }
+
+    header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    header input {
+        align-self: flex-start;
+    }
+
+    header .logo {
+        display: block;
+        align-self: flex-end;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #dbdbdb;
+    }
+
+    .dx{
+        display: none;
+    }
 }
